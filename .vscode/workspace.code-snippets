@@ -1,0 +1,151 @@
+{
+  "React TS Functional Component": {
+    "prefix": ["rfc"],
+    "body": [
+      "export interface ${1:$TM_FILENAME_BASE}Props {",
+      "  $2",
+      "}\n",
+      "const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  const { $3 } = props;\n",
+      "  return <div$0></div$0>;",
+      "};\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "React TS functional component with props interface",
+    "scope": "typescriptreact"
+  },
+  "React TS Functional Component with default props": {
+    "prefix": ["rfcd"],
+    "body": [
+      "export interface ${1:$TM_FILENAME_BASE}Props {",
+      "  $2",
+      "}\n",
+      "const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  const { $4 } = props;\n",
+      "  return <div$0></div$0>;",
+      "};\n",
+      "${1:$TM_FILENAME_BASE}.defaultProps = {",
+      "  $3",
+      "};\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "React TS functional component with props interface and default props",
+    "scope": "typescriptreact"
+  },
+  "React TS Mock Data": {
+    "prefix": ["rfcm", "rfcmoc"],
+    "body": [
+      "import { ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props } from './${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}';\n",
+      "const base: ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props = {",
+      "  $0",
+      "};\n",
+      "export const mock${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props = {",
+      "  base,",
+      "};\n"
+    ],
+    "description": "React TS functional component with props interface and default props",
+    "scope": "typescriptreact,typescript"
+  },
+  "React TS Storybook": {
+    "prefix": ["rfcs"],
+    "body": [
+      "import { ComponentMeta, ComponentStory } from '@storybook/react';",
+      "import ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}, { ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props } from './${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}';",
+      "import { mock${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props } from './${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}.mocks';\n",
+      "export default {",
+      "  title: '${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}/${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}',",
+      "  component: ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}},",
+      "  argTypes: {},",
+      "} as ComponentMeta<typeof ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}>;\n",
+      "const Template: ComponentStory<typeof ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}> = (args) => (",
+      "  <${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}} {...args} />",
+      ");\n",
+      "export const Base = Template.bind({});\n",
+      "Base.args = {",
+      "  ...mock${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props.base,",
+      "} as ${1:${TM_FILENAME_BASE/(.*)\\..+$/$1/}}Props;"
+    ],
+    "description": "React TS storybook snippet",
+    "scope": "typescriptreact"
+  },
+  "Next.js SSR FC": {
+    "prefix": ["nxssr"],
+    "body": [
+      "import { GetServerSideProps } from 'next';\n",
+      "export interface ${1:$TM_FILENAME_BASE}Props {",
+      "  $2",
+      "}\n",
+      "const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  const { $4 } = props;\n",
+      "  return <div$0></div$0>;",
+      "};\n",
+      "export const getServerSideProps: GetServerSideProps<${1:$TM_FILENAME_BASE}Props> = async (",
+      "  context",
+      ") => {",
+      "  return {",
+      "    props: { $3 },",
+      "  };",
+      "};\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "Next.js SSR FC",
+    "scope": "typescriptreact"
+  },
+  "Next.js SSG FC": {
+    "prefix": ["nxssg"],
+    "body": [
+      "import { GetStaticProps } from 'next';\n",
+      "export interface ${1:$TM_FILENAME_BASE}Props {",
+      "  $2",
+      "}\n",
+      "const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  const { $4 } = props;\n",
+      "  return <div$0></div$0>;",
+      "};\n",
+      "export const getStaticProps: GetStaticProps<${1:$TM_FILENAME_BASE}Props> = async (",
+      "  context",
+      ") => {",
+      "  return {",
+      "    props: { $3 },",
+      "  };",
+      "};\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "Next.js SSG FC",
+    "scope": "typescriptreact"
+  },
+  "Next.js SSG FC with Paths": {
+    "prefix": ["nxssgp"],
+    "body": [
+      "import { GetStaticPaths, GetStaticProps } from 'next';",
+      "import { ParsedUrlQuery } from 'querystring';\n",
+      "export interface ${1:$TM_FILENAME_BASE}Props {",
+      "  $4",
+      "}\n",
+      "export interface ${1:$TM_FILENAME_BASE}Path extends ParsedUrlQuery {",
+      "  $2",
+      "}\n",
+      "const ${1:$TM_FILENAME_BASE}: React.FC<${1:$TM_FILENAME_BASE}Props> = (props) => {",
+      "  const { $6 } = props;\n",
+      "  return <div$0></div$0>;",
+      "};\n",
+      "export const getStaticProps: GetStaticProps<${1:$TM_FILENAME_BASE}Props, ${1:$TM_FILENAME_BASE}Path> = async (",
+      "  context",
+      ") => {",
+      "  return {",
+      "    props: { $5 },",
+      "  };",
+      "};\n",
+      "export const getStaticPaths: GetStaticPaths<${1:$TM_FILENAME_BASE}Path> = async () => {",
+      "  const paths = [{ params: { $3 } }];\n",
+      "  return {",
+      "    paths,",
+      "    fallback: false,",
+      "  };",
+      "};\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "Next.js SSG FC with getStaticPaths",
+    "scope": "typescriptreact"
+  }
+}
