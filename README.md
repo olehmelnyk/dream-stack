@@ -18,10 +18,12 @@ This is an opinionated and extended t3-turbo stack, which includes:
     - [ ] Roles + RBAC (Role Based Access Control)
 - [x] Mobile: [ReactNative](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
-- [x] JS superset: [TypeScript](https://www.typescriptlang.org/)
+  - [ ] Global state management: [Zustand](https://zustand-demo.pmnd.rs/)
+- [x] JavaScript superset with strong typying: [TypeScript](https://www.typescriptlang.org/)
+  - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
 - [x] CSS library: [TailwindCSS](https://tailwindcss.com/)
 - [x] Param validation: [Zod](https://zod.dev/)
-- [x] ORM: [Prisma](https://www.prisma.io/)
+- [x] ORM for SQL and NoSQL: [Prisma](https://www.prisma.io/)
 - [x] Monorepo: [Turborepo](https://turbo.build/repo)
 - [x] Package Manager: [pnpm](https://pnpm.io/)
 
@@ -35,17 +37,21 @@ _plus more:_
 - [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
 - [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
 - [ ] Form handler: [Formik](https://formik.org/) or [React Hook Form](https://react-hook-form.com/) (both works with Zod)
+- [ ] Icons: [Lucide](https://lucide.dev/) and / or [react-icons](https://react-icons.github.io/react-icons/)
+- [ ] Animations: [Framer Motion](https://www.framer.com/motion/) and / or [react-spring](https://www.react-spring.dev/) and / or [react-animations](https://github.com/FormidableLabs/react-animations) and / or [GreenSock](https://greensock.com/)
 - [ ] _DreamUI (customly build UI library on top of shancn, with form handlers, snackbar, i18n/rtl, etc.)_
 
 ### ✅ Quality
 
 - [ ] Git hooks: [husky](https://typicode.github.io/husky/#/)
+  - [ ] [lint-staged](https://github.com/okonet/lint-staged) & .lintstagedrc
+  - [ ] [lintcommit](https://commitlint.js.org/)
 - [x] Code formatter: [Prettier](https://prettier.io/)
 - [x] Code linting: [ESLint](https://eslint.org/)
 - [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
 - [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
-- [ ] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [ ] Git Branch Name Convesions
+- [ ] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
+- [ ] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
 - [ ] Code monitoring, logging and alerting: [Sentry](https://sentry.io/welcome/)
 - [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
 - [ ] Vulnerabilities checker: [Snyk](https://snyk.io/)
@@ -75,6 +81,9 @@ _plus more:_
 
 ### 🛠️ Other
 
-- [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
 - [ ] i18n / rtl support
-- [ ] Row Level Security
+- [ ] [Row Level Security](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
+
+# Useful resources:
+
+- [NPM Trends](https://npmtrends.com/) can be used if you need to complare multiple npm packages to pick from
