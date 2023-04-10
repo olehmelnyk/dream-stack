@@ -4,7 +4,7 @@ importers:
 
   .:
     dependencies:
-      '@acme/eslint-config':
+      '@idid/eslint-config':
         specifier: ^0.1.0
         version: link:packages/config/eslint
       '@ianvs/prettier-plugin-sort-imports':
@@ -92,13 +92,13 @@ importers:
         specifier: 1.9.1
         version: 1.9.1
     devDependencies:
-      '@acme/api':
+      '@idid/api':
         specifier: '*'
         version: link:../../packages/api
-      '@acme/eslint-config':
+      '@idid/eslint-config':
         specifier: '*'
         version: link:../../packages/config/eslint
-      '@acme/tailwind-config':
+      '@idid/tailwind-config':
         specifier: '*'
         version: link:../../packages/config/tailwind
       '@babel/core':
@@ -137,16 +137,16 @@ importers:
 
   apps/nextjs:
     dependencies:
-      '@acme/api':
+      '@idid/api':
         specifier: ^0.1.0
         version: link:../../packages/api
-      '@acme/auth':
+      '@idid/auth':
         specifier: ^0.1.0
         version: link:../../packages/auth
-      '@acme/db':
+      '@idid/db':
         specifier: ^0.1.0
         version: link:../../packages/db
-      '@acme/tailwind-config':
+      '@idid/tailwind-config':
         specifier: ^0.1.0
         version: link:../../packages/config/tailwind
       '@tanstack/react-query':
@@ -183,7 +183,7 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
-      '@acme/eslint-config':
+      '@idid/eslint-config':
         specifier: ^0.1.0
         version: link:../../packages/config/eslint
       '@types/node':
@@ -216,10 +216,10 @@ importers:
 
   packages/api:
     dependencies:
-      '@acme/auth':
+      '@idid/auth':
         specifier: ^0.1.0
         version: link:../auth
-      '@acme/db':
+      '@idid/db':
         specifier: ^0.1.0
         version: link:../db
       '@trpc/client':
@@ -235,7 +235,7 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
-      '@acme/eslint-config':
+      '@idid/eslint-config':
         specifier: ^0.1.0
         version: link:../config/eslint
       eslint:
@@ -247,7 +247,7 @@ importers:
 
   packages/auth:
     dependencies:
-      '@acme/db':
+      '@idid/db':
         specifier: ^0.1.0
         version: link:../db
       '@next-auth/prisma-adapter':
@@ -266,7 +266,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@acme/eslint-config':
+      '@idid/eslint-config':
         specifier: ^0.1.0
         version: link:../config/eslint
       eslint:
