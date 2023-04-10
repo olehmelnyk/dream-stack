@@ -4,12 +4,12 @@ importers:
 
   .:
     dependencies:
-      '@idid/eslint-config':
-        specifier: ^0.1.0
-        version: link:packages/config/eslint
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^3.7.2
         version: 3.7.2(prettier@2.8.7)
+      '@idid/eslint-config':
+        specifier: ^0.1.0
+        version: link:packages/config/eslint
       '@manypkg/cli':
         specifier: ^0.20.0
         version: 0.20.0
@@ -31,6 +31,10 @@ importers:
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
+    devDependencies:
+      '@total-typescript/ts-reset':
+        specifier: ^0.4.2
+        version: 0.4.2
 
   apps/expo:
     dependencies:
@@ -92,15 +96,6 @@ importers:
         specifier: 1.9.1
         version: 1.9.1
     devDependencies:
-      '@idid/api':
-        specifier: '*'
-        version: link:../../packages/api
-      '@idid/eslint-config':
-        specifier: '*'
-        version: link:../../packages/config/eslint
-      '@idid/tailwind-config':
-        specifier: '*'
-        version: link:../../packages/config/tailwind
       '@babel/core':
         specifier: ^7.21.4
         version: 7.21.4
@@ -113,6 +108,15 @@ importers:
       '@expo/config-plugins':
         specifier: ^6.0.1
         version: 6.0.1
+      '@idid/api':
+        specifier: '*'
+        version: link:../../packages/api
+      '@idid/eslint-config':
+        specifier: '*'
+        version: link:../../packages/config/eslint
+      '@idid/tailwind-config':
+        specifier: '*'
+        version: link:../../packages/config/tailwind
       '@types/babel__core':
         specifier: ^7.20.0
         version: 7.20.0
@@ -2861,6 +2865,10 @@ packages:
       react-native: 0.71.6(@babel/core@7.21.4)(@babel/preset-env@7.21.4)(react@18.2.0)
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
+
+  /@total-typescript/ts-reset@0.4.2:
+    resolution: {integrity: sha512-vqd7ZUDSrXFVT1n8b2kc3LnklncDQFPvR58yUS1kEP23/nHPAO9l1lMjUfnPrXYYk4Hj54rrLKMW5ipwk7k09A==}
+    dev: true
 
   /@trpc/client@10.19.1(@trpc/server@10.19.1):
     resolution: {integrity: sha512-H61dIgoAjiA7/SfuHlUAsqshhaxOSSRFyEfaoBwYvXzLyno+fvQRUXvxpsC4A8IsDuNX2pxiggAK8AwTNKqIzg==}
