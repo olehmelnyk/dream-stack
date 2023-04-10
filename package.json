@@ -16,20 +16,23 @@
     "lint": "turbo lint && manypkg check",
     "lint:fix": "turbo lint:fix && manypkg fix",
     "type-check": "turbo type-check",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
     "@idid/eslint-config": "^0.1.0",
     "@manypkg/cli": "^0.20.0",
+    "@total-typescript/ts-reset": "^0.4.2",
     "@types/prettier": "^2.7.2",
     "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.7",
     "turbo": "^1.8.8",
     "typescript": "^5.0.4"
-  },
-  "devDependencies": {
-    "@total-typescript/ts-reset": "^0.4.2"
   }
 }

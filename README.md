@@ -43,15 +43,15 @@ _plus more:_
 
 ### ✅ Quality
 
-- [ ] Git hooks: [husky](https://typicode.github.io/husky/#/)
-  - [ ] [lint-staged](https://github.com/okonet/lint-staged) & .lintstagedrc
-  - [ ] [lintcommit](https://commitlint.js.org/)
+- [x] Git hooks: [husky](https://typicode.github.io/husky/#/)
+  - [x] [lint-staged](https://github.com/okonet/lint-staged) & .lintstagedrc
+  - [x] [lintcommit](https://commitlint.js.org/)
 - [x] Code formatter: [Prettier](https://prettier.io/)
 - [x] Code linting: [ESLint](https://eslint.org/)
 - [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
 - [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
-- [ ] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
-- [ ] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
+- [x] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
+- [x] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
 - [ ] Code monitoring, logging and alerting: [Sentry](https://sentry.io/welcome/)
 - [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
 - [ ] Vulnerabilities checker: [Snyk](https://snyk.io/)

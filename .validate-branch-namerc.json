@@ -1,0 +1,3 @@
+{
+  "pattern": "^(dev|test|stage|main){1}$|^(release|sprint)/.+$|^(feature|(bug|hot)?fix)/ACME-[0-9]+/.+$"
+}
