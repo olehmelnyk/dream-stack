@@ -24,10 +24,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@acme/eslint-config": "^0.1.0",
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
-    "@idid/eslint-config": "^0.1.0",
     "@manypkg/cli": "^0.20.0",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/prettier": "^2.7.2",

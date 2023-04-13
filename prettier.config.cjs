@@ -23,7 +23,7 @@ const config = {
     "^(expo(.*)$)|^(expo$)",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^@idid/(.*)$",
+    "^@acme/(.*)$",
     "",
     "^~/utils/(.*)$",
     "^~/components/(.*)$",
