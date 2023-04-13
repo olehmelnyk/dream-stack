@@ -1,103 +1,201 @@
-# Stack
+# create-t3-turbo
 
-This is an opinionated and extended t3-turbo stack, which includes:
+<img width="1758" alt="turbo2" src="https://user-images.githubusercontent.com/51714798/213819392-33e50db9-3e38-4c51-9a22-03abe5e48f3d.png">
 
-### ⏱️ [T3-TURBO](https://github.com/t3-oss/create-t3-turbo)
+## About
 
-- [x] WebUI:
-  - [x] [ReactJS](https://react.dev/) / [NextJS](https://nextjs.org/)
-  - [x] [NextAuth](https://next-auth.js.org/)
-    - [ ] email / password auth
-    - [ ] Auth with Facebook
-    - [ ] Auth with Google
-    - [ ] Auth with Apple
-    - [ ] Auth with Microsoft
-    - [ ] Auth with Twitter
-    - [ ] JWT
-    - [ ] 2fa (with Google Athenticator Codes)
-    - [ ] Roles + RBAC (Role Based Access Control)
-- [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
-- [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
-  - [ ] Global state management: [Zustand](https://zustand-demo.pmnd.rs/)
-- [x] JavaScript superset with strong typying: [TypeScript](https://www.typescriptlang.org/)
-  - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
-- [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
-- [x] Param validation: [Zod](https://zod.dev/)
-- [x] ORM for SQL and NoSQL: [Prisma](https://www.prisma.io/)
-- [x] Monorepo: [Turborepo](https://turbo.build/repo)
-- [x] Package Manager: [pnpm](https://pnpm.io/)
+Ever wondered how to migrate your T3 application into a monorepo? Stop right here! This is the perfect starter repo to get you running with the perfect stack!
 
-_plus more:_
+It uses [Turborepo](https://turborepo.org/) and contains:
 
-### 🪪 UI
+```
+.github
+  └─ workflows
+        └─ CI with pnpm cache setup
+.vscode
+  └─ Recommended extensions and settings for VSCode users
+apps
+  ├─ expo
+  |   ├─ Expo SDK 48
+  |   ├─ React Native using React 18
+  |   ├─ Navigation using Expo Router
+  |   ├─ Tailwind using Nativewind
+  |   └─ Typesafe API calls using tRPC
+  └─ next.js
+      ├─ Next.js 13
+      ├─ React 18
+      ├─ Tailwind CSS
+      └─ E2E Typesafe API Server & Client
+packages
+ ├─ api
+ |   └─ tRPC v10 router definition
+ ├─ auth
+     └─ authentication using next-auth. **NOTE: Only for Next.js app, not Expo**
+ └─ db
+     └─ typesafe db-calls using Prisma
+```
 
-- [ ] [Figma](https://www.figma.com/) + [Zeplin](https://zeplin.io/)
-- [ ] [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
-- [ ] [Storybook](https://storybook.js.org/)
-- [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
-- [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
-- [ ] Form handler: [Formik](https://formik.org/) or [React Hook Form](https://react-hook-form.com/) (both works with Zod)
-- [ ] Icons: [Lucide](https://lucide.dev/) and / or [react-icons](https://react-icons.github.io/react-icons/)
-- [ ] Animations: [Framer Motion](https://www.framer.com/motion/) and / or [react-spring](https://www.react-spring.dev/) and / or [react-animations](https://github.com/FormidableLabs/react-animations) and / or [GreenSock](https://greensock.com/)
-- [ ] _DreamUI (customly build UI library on top of shancn, with form handlers, snackbar, i18n/rtl, etc.)_
+## FAQ
 
-### ✅ Quality and CI/CD
+### Can you include Solito?
 
-- [x] Git hooks: [husky](https://typicode.github.io/husky/#/)
-  - [x] [lint-staged](https://github.com/okonet/lint-staged) & .lintstagedrc
-  - [x] [lintcommit](https://commitlint.js.org/)
-- [x] Code formatter: [Prettier](https://prettier.io/)
-- [x] Code linting: [ESLint](https://eslint.org/)
-- [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
-- [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
-- [x] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
-- [x] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
-- [ ] Code monitoring, logging and alerting: [Sentry](https://sentry.io/welcome/)
-- [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
-- [ ] Vulnerabilities checks
-  - [ ] [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
-  - [ ] [Snyk](https://snyk.io/)
-- [ ] Audits for performance, accessibility, progressive web apps, SEO, and more: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/#cli)
-- [ ] Release automation (with [Semantic Release](https://semantic-release.gitbook.io/semantic-release/)) - has plugins update version and changelog, Docker Hub / Expo app / npm publish, push notification to Slack bot or Telegram Bot, etc.
-  - [ ] [ReactJS / NextJS release](https://dev.to/amalv/how-to-setup-semantic-release-for-a-react-app-or-a-next-js-app-25c1)
-  - [ ] [React Native release](https://semaphoreci.com/blog/automate-react-native-release) with [Semantic Release](https://github.com/semantic-release/semantic-release), [Fastlane](https://fastlane.tools/), and [Semaphore](https://semaphoreci.com/)
+No. Solito will not be included in this repo. It is a great tool if you want to share code between your Next.js and Expo app. However, the main purpose of this repo is not the integration between Next.js and Expo - it's the codesplitting of your T3 App into a monorepo, the Expo app is just a bonus example of how you can utilize the monorepo with multiple apps but can just as well be any app such as Vite, Electron, etc.
 
-### 🔍 Tesing
+Integrating Solito into this repo isn't hard, and there are a few [offical templates](https://github.com/nandorojo/solito/tree/master/example-monorepos) by the creators of Solito that you can use as a reference.
 
-- [ ] Unit / Integration testing: [Jest](https://jestjs.io/)
-- [ ] UI testing: [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) & [React Native Testing Library](https://testing-library.com/docs/react-native-testing-library/intro)
-- [ ] e2e testing: [Cypress](https://www.cypress.io/)
-- [ ] API testing: [Postman](https://www.postman.com/)
+### What auth solution should I use instead of Next-Auth.js for Expo?
 
-### 📚 Documentation
+I've left this kind of open for you to decide. Some options are [Clerk](https://clerk.dev), [Supabase Auth](https://supabase.com/docs/guides/auth), [Firebase Auth](https://firebase.google.com/docs/auth/) or [Auth0](https://auth0.com/docs). Note that if you're dropping the Expo app for something more "browser-like", you can still use Next-Auth.js for those. [See an example in a Plasmo Chrome Extension here](https://github.com/t3-oss/create-t3-turbo/tree/chrome/apps/chrome).
 
-- [ ] UI documentation: [Storybook](https://storybook.js.org/)
-- [ ] API documentation: [Swagger](https://swagger.io/) & [Postman](https://www.postman.com/)
-- [ ] Other markdown docs: [Docusaurus](https://docusaurus.io/) or [Nextra](https://nextra.site/)
+The Clerk.dev team even made an [official template repository](https://github.com/clerkinc/t3-turbo-and-clerk) integrating Clerk.dev with this repo.
 
-### 💭 Backend / Cloud
+### Does this pattern leak backend code to my client applications?
 
-- [ ] Microservices
-  - [ ] [NestJS](https://nestjs.com/)
-  - [ ] Deno?
-  - [ ] Python?
-  - [ ] Go?
-  - [ ] Rust?
-- [ ] Realtime notifications / chat: [Pusher](https://pusher.com/)
-- [ ] [Upstash](https://upstash.com/): serverless Redis (with rate limiting and feature flags) / Kafka / QStash
-  - [ ] [Redis](https://docs.upstash.com/redis)
-    - [ ] [Rate limiting](https://upstash.com/blog/upstash-ratelimit)
-    - [ ] [Feature flags](https://docs.upstash.com/redis/sdks/edge-flags/overview)
-  - [ ] [Kafka](https://docs.upstash.com/kafka)
-- [ ] File upload: [S3](https://aws.amazon.com/s3/?nc1=h_ls)
-- [ ] Send emails: [Nodemailer](https://nodemailer.com/about/) + [SendGrid](https://sendgrid.com/)
-- [ ] Full text serach: [ElasticSearch](https://www.elastic.co/enterprise-search)
+No, it does not. The `api` package should only be a production dependency in the Next.js application where it's served. The Expo app, and all other apps you may add in the future, should only add the `api` package as a dev dependency. This lets you have full typesafety in your client applications, while keeping your backend code safe.
 
-### 🛠️ Other
+If you need to share runtime code between the client and server, such as input validation schemas, you can create a separate `shared` package for this and import on both sides.
 
-- [ ] i18n / rtl support
-- [ ] [Row Level Security](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
+## Quick Start
 
-# Useful resources:
+To get it running, follow the steps below:
 
-- [NPM Trends](https://npmtrends.com/) can be used if you need to complare multiple npm packages to pick from
+### Setup dependencies
+
+```diff
+# Install dependencies
+pnpm i
+
+# In packages/db/prisma update schema.prisma provider to use sqlite
+# or use your own database provider
+- provider = "postgresql"
++ provider = "sqlite"
+
+# Configure environment variables.
+# There is an `.env.example` in the root directory you can use for reference
+cp .env.example .env
+
+# Push the Prisma schema to your database
+pnpm db:push
+```
+
+### Configure Expo `dev`-script
+
+#### Use iOS Simulator
+
+1. Make sure you have XCode and XCommand Line Tools installed [as shown on expo docs](https://docs.expo.dev/workflow/ios-simulator/).
+   > **NOTE:** If you just installed XCode, or if you have updated it, you need to open the simulator manually once. Run `npx expo start` in the root dir, and then enter `I` to launch Expo Go. After the manual launch, you can run `pnpm dev` in the root directory.
+
+```diff
++  "dev": "expo start --ios",
+```
+
+3. Run `pnpm dev` at the project root folder.
+
+> **TIP:** It might be easier to run each app in separate terminal windows so you get the logs from each app separately. This is also required if you want your terminals to be interactive, e.g. to access the Expo QR code. You can run `pnpm --filter expo dev` and `pnpm --filter nextjs dev` to run each app in a separate terminal window.
+
+#### For Android
+
+1. Install Android Studio tools [as shown on expo docs](https://docs.expo.dev/workflow/android-studio-emulator/).
+2. Change the `dev` script at `apps/expo/package.json` to open the Android emulator.
+
+```diff
++  "dev": "expo start --android",
+```
+
+3. Run `pnpm dev` at the project root folder.
+
+## Deployment
+
+### Next.js
+
+#### Prerequisites
+
+_We do not recommend deploying a SQLite database on serverless environments since the data wouldn't be persisted. I provisioned a quick Postgresql database on [Railway](https://railway.app), but you can of course use any other database provider. Make sure the prisma schema is updated to use the correct database._
+
+**Please note that the Next.js application with tRPC must be deployed in order for the Expo app to communicate with the server in a production environment.**
+
+#### Deploy to Vercel
+
+Let's deploy the Next.js application to [Vercel](https://vercel.com/). If you have ever deployed a Turborepo app there, the steps are quite straightforward. You can also read the [official Turborepo guide](https://vercel.com/docs/concepts/monorepos/turborepo) on deploying to Vercel.
+
+1. Create a new project on Vercel, select the `apps/nextjs` folder as the root directory and apply the following build settings:
+
+<img width="927" alt="Vercel deployment settings" src="https://user-images.githubusercontent.com/11340449/201974887-b6403a32-5570-4ce6-b146-c486c0dbd244.png">
+
+> The install command filters out the expo package and saves a few second (and cache size) of dependency installation. The build command makes us build the application using Turbo.
+
+2. Add your `DATABASE_URL` environment variable.
+
+3. Done! Your app should successfully deploy. Assign your domain and use that instead of `localhost` for the `url` in the Expo app so that your Expo app can communicate with your backend when you are not in development.
+
+### Expo
+
+Deploying your Expo application works slightly differently compared to Next.js on the web. Instead of "deploying" your app online, you need to submit production builds of your app to the app stores, like [Apple App Store](https://www.apple.com/app-store/) and [Google Play](https://play.google.com/store/apps). You can read the full [Distributing your app](https://docs.expo.dev/distribution/introduction/), including best practices, in the Expo docs.
+
+1. Make sure to modify the `getBaseUrl` function to point to your backend's production URL:
+
+https://github.com/t3-oss/create-t3-turbo/blob/656965aff7db271e5e080242c4a3ce4dad5d25f8/apps/expo/src/utils/api.tsx#L20-L37
+
+2. Let's start by setting up [EAS Build](https://docs.expo.dev/build/introduction/), which is short for Expo Application Services. The build service helps you create builds of your app, without requiring a full native development setup. The commands below are a summary of [Creating your first build](https://docs.expo.dev/build/setup/).
+
+   ```bash
+   // Install the EAS CLI
+   $ pnpm add -g eas-cli
+
+   // Log in with your Expo account
+   $ eas login
+
+   // Configure your Expo app
+   $ cd apps/expo
+   $ eas build:configure
+   ```
+
+3. After the initial setup, you can create your first build. You can build for Android and iOS platforms and use different [**eas.json** build profiles](https://docs.expo.dev/build-reference/eas-json/) to create production builds or development, or test builds. Let's make a production build for iOS.
+
+   ```
+   $ eas build --platform ios --profile production
+   ```
+
+   > If you don't specify the `--profile` flag, EAS uses the `production` profile by default.
+
+4. Now that you have your first production build, you can submit this to the stores. [EAS Submit](https://docs.expo.dev/submit/introduction/) can help you send the build to the stores.
+
+   ```
+   $ eas submit --platform ios --latest
+   ```
+
+   > You can also combine build and submit in a single command, using `eas build ... --auto-submit`.
+
+5. Before you can get your app in the hands of your users, you'll have to provide additional information to the app stores. This includes screenshots, app information, privacy policies, etc. _While still in preview_, [EAS Metadata](https://docs.expo.dev/eas/metadata/) can help you with most of this information.
+
+6. Once everything is approved, your users can finally enjoy your app. Let's say you spotted a small typo; you'll have to create a new build, submit it to the stores, and wait for approval before you can resolve this issue. In these cases, you can use EAS Update to quickly send a small bugfix to your users without going through this long process. Let's start by setting up EAS Update.
+
+   The steps below summarize the [Getting started with EAS Update](https://docs.expo.dev/eas-update/getting-started/#configure-your-project) guide.
+
+   ```bash
+   // Add the `expo-updates` library to your Expo app
+   $ cd apps/expo
+   $ pnpm expo install expo-updates
+
+   // Configure EAS Update
+   $ eas update:configure
+   ```
+
+7. Before we can send out updates to your app, you have to create a new build and submit it to the app stores. For every change that includes native APIs, you have to rebuild the app and submit the update to the app stores. See steps 2 and 3.
+
+8. Now that everything is ready for updates, let's create a new update for `production` builds. With the `--auto` flag, EAS Update uses your current git branch name and commit message for this update. See [How EAS Update works](https://docs.expo.dev/eas-update/how-eas-update-works/#publishing-an-update) for more information.
+
+   ```bash
+   $ cd apps/expo
+   $ eas update --auto
+   ```
+
+   > Your OTA (Over The Air) updates must always follow the app store's rules. You can't change your app's primary functionality without getting app store approval. But this is a fast way to update your app for minor changes and bug fixes.
+
+9. Done! Now that you have created your production build, submitted it to the stores, and installed EAS Update, you are ready for anything!
+
+## References
+
+The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
+
+A [blog post](https://jumr.dev/blog/t3-turbo) where I wrote how to migrate a T3 app into this.
