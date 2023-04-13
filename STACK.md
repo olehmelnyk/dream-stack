@@ -16,6 +16,7 @@ This is an opinionated and extended t3-turbo stack, which includes:
     - [ ] JWT
     - [ ] 2fa (with Google Athenticator Codes)
     - [ ] Roles + RBAC (Role Based Access Control)
+    - [ ] [Using Postmark with NextAuth.js](https://shadcn.com/next-auth-postmark)
 - [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
   - [ ] Global state management: [Zustand](https://zustand-demo.pmnd.rs/)
@@ -90,7 +91,10 @@ _plus more:_
     - [ ] [Feature flags](https://docs.upstash.com/redis/sdks/edge-flags/overview)
   - [ ] [Kafka](https://docs.upstash.com/kafka)
 - [ ] File upload: [S3](https://aws.amazon.com/s3/?nc1=h_ls)
-- [ ] Send emails: [Nodemailer](https://nodemailer.com/about/) + [SendGrid](https://sendgrid.com/)
+- [ ] Send emails
+  - [ ] [Postmark](https://postmarkapp.com/)
+  - [ ] [Nodemailer](https://nodemailer.com/about/)
+  - [ ] [SendGrid](https://sendgrid.com/)
 - [ ] Full text serach: [ElasticSearch](https://www.elastic.co/enterprise-search)
 
 ### 🛠️ Other
