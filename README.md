@@ -7,7 +7,6 @@ This is an opinionated and extended t3-turbo stack, which includes:
 - [x] WebUI:
   - [x] [ReactJS](https://react.dev/) / [NextJS](https://nextjs.org/)
   - [x] [NextAuth](https://next-auth.js.org/)
-    - [ ] 2fa (with Google Athenticator Codes)
     - [ ] email / password auth
     - [ ] Auth with Facebook
     - [ ] Auth with Google
@@ -15,13 +14,14 @@ This is an opinionated and extended t3-turbo stack, which includes:
     - [ ] Auth with Microsoft
     - [ ] Auth with Twitter
     - [ ] JWT
+    - [ ] 2fa (with Google Athenticator Codes)
     - [ ] Roles + RBAC (Role Based Access Control)
-- [x] Mobile: [ReactNative](https://reactnative.dev/) / [Expo](https://expo.dev/)
+- [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
   - [ ] Global state management: [Zustand](https://zustand-demo.pmnd.rs/)
 - [x] JavaScript superset with strong typying: [TypeScript](https://www.typescriptlang.org/)
   - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
-- [x] CSS library: [TailwindCSS](https://tailwindcss.com/)
+- [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
 - [x] Param validation: [Zod](https://zod.dev/)
 - [x] ORM for SQL and NoSQL: [Prisma](https://www.prisma.io/)
 - [x] Monorepo: [Turborepo](https://turbo.build/repo)
@@ -31,7 +31,7 @@ _plus more:_
 
 ### 🪪 UI
 
-- [ ] [Figma](https://www.figma.com/)
+- [ ] [Figma](https://www.figma.com/) + [Zeplin](https://zeplin.io/)
 - [ ] [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [ ] [Storybook](https://storybook.js.org/)
 - [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
@@ -41,7 +41,7 @@ _plus more:_
 - [ ] Animations: [Framer Motion](https://www.framer.com/motion/) and / or [react-spring](https://www.react-spring.dev/) and / or [react-animations](https://github.com/FormidableLabs/react-animations) and / or [GreenSock](https://greensock.com/)
 - [ ] _DreamUI (customly build UI library on top of shancn, with form handlers, snackbar, i18n/rtl, etc.)_
 
-### ✅ Quality
+### ✅ Quality and CI/CD
 
 - [x] Git hooks: [husky](https://typicode.github.io/husky/#/)
   - [x] [lint-staged](https://github.com/okonet/lint-staged) & .lintstagedrc
@@ -54,8 +54,13 @@ _plus more:_
 - [x] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
 - [ ] Code monitoring, logging and alerting: [Sentry](https://sentry.io/welcome/)
 - [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
-- [ ] Vulnerabilities checker: [Snyk](https://snyk.io/)
+- [ ] Vulnerabilities checks
+  - [ ] [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
+  - [ ] [Snyk](https://snyk.io/)
 - [ ] Audits for performance, accessibility, progressive web apps, SEO, and more: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/#cli)
+- [ ] Release automation (with [Semantic Release](https://semantic-release.gitbook.io/semantic-release/)) - has plugins update version and changelog, Docker Hub / Expo app / npm publish, push notification to Slack bot or Telegram Bot, etc.
+  - [ ] [ReactJS / NextJS release](https://dev.to/amalv/how-to-setup-semantic-release-for-a-react-app-or-a-next-js-app-25c1)
+  - [ ] [React Native release](https://semaphoreci.com/blog/automate-react-native-release) with [Semantic Release](https://github.com/semantic-release/semantic-release), [Fastlane](https://fastlane.tools/), and [Semaphore](https://semaphoreci.com/)
 
 ### 🔍 Tesing
 
@@ -72,9 +77,18 @@ _plus more:_
 
 ### 💭 Backend / Cloud
 
-- [ ] Microservices: [NestJS](https://nestjs.com/)
+- [ ] Microservices
+  - [ ] [NestJS](https://nestjs.com/)
+  - [ ] Deno?
+  - [ ] Python?
+  - [ ] Go?
+  - [ ] Rust?
 - [ ] Realtime notifications / chat: [Pusher](https://pusher.com/)
-- [ ] Caching: [Redis](https://redis.io/) + [Upstash](https://upstash.com/)
+- [ ] [Upstash](https://upstash.com/): serverless Redis (with rate limiting and feature flags) / Kafka / QStash
+  - [ ] [Redis](https://docs.upstash.com/redis)
+    - [ ] [Rate limiting](https://upstash.com/blog/upstash-ratelimit)
+    - [ ] [Feature flags](https://docs.upstash.com/redis/sdks/edge-flags/overview)
+  - [ ] [Kafka](https://docs.upstash.com/kafka)
 - [ ] File upload: [S3](https://aws.amazon.com/s3/?nc1=h_ls)
 - [ ] Send emails: [Nodemailer](https://nodemailer.com/about/) + [SendGrid](https://sendgrid.com/)
 - [ ] Full text serach: [ElasticSearch](https://www.elastic.co/enterprise-search)
