@@ -1,8 +1,12 @@
 {
   "name": "create-t3-turbo",
   "private": true,
+  "homepage": "https://github.com/olehmelnyk/dream-stack",
   "engines": {
-    "node": ">=v18.15.0"
+    "node": ">=v18.15.0",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=8.1.1"
   },
   "packageManager": "pnpm@8.1.1",
   "scripts": {
