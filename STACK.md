@@ -24,7 +24,7 @@ This is an opinionated and extended t3-turbo stack, which includes:
   - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
 - [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
   - [x] [tailwind-merge](https://www.npmjs.com/package/tailwind-merge)
-  - [x] [classnames](https://www.npmjs.com/package/classnames)
+  - [x] [clsx](https://www.npmjs.com/package/clsx)
 - [x] Param validation: [Zod](https://zod.dev/)
 - [x] ORM for SQL and NoSQL: [Prisma](https://www.prisma.io/)
 - [x] Monorepo: [Turborepo](https://turbo.build/repo)
