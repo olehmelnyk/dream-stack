@@ -49,6 +49,7 @@ _plus more:_
   - [x] [lintcommit](https://commitlint.js.org/)
 - [x] Code formatter: [Prettier](https://prettier.io/)
 - [x] Code linting: [ESLint](https://eslint.org/)
+  - [x] [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
 - [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
 - [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
 - [x] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
