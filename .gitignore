@@ -36,7 +36,6 @@ yarn-error.log*
 
 # local env files
 .env
-.env*.local
 
 # vercel
 .vercel
@@ -49,3 +48,6 @@ yarn-error.log*
 
 # local docker volumes
 volumes
+
+# .dist folder for generated statics, like storybook / docs / etc.
+.dist
