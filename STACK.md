@@ -2,7 +2,7 @@
 
 This is an opinionated and extended t3-turbo stack, which includes:
 
-### ⏱️ [T3-TURBO](https://github.com/t3-oss/create-t3-turbo)
+### 🏎️ [T3-TURBO](https://github.com/t3-oss/create-t3-turbo)
 
 - [x] WebUI:
   - [x] [ReactJS](https://react.dev/) / [NextJS](https://nextjs.org/)
@@ -19,7 +19,9 @@ This is an opinionated and extended t3-turbo stack, which includes:
     - [ ] [Using Postmark with NextAuth.js](https://shadcn.com/next-auth-postmark)
 - [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
-  - [ ] Global state management: [Zustand](https://zustand-demo.pmnd.rs/)
+  - [ ] Global state management:
+  - [ ] [Zustand](https://zustand-demo.pmnd.rs/) (as replacement for Redux)
+  - [ ] [Jotai](https://jotai.org/) (as replacement for ContextAPI, insipred by [Recoil](https://recoiljs.org/))
 - [x] JavaScript superset with strong typying: [TypeScript](https://www.typescriptlang.org/)
   - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
 - [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
@@ -39,11 +41,20 @@ _plus more:_
 - [ ] [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [ ] [Storybook](https://storybook.js.org/)
   - [x] Basic setup for Sotrybook/NextJS components
+  - [ ] Free Storybook deployments with CI/CD, feedbacs and more: [Chromatic](https://www.chromatic.com/)
 - [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
 - [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
-- [ ] Form handler: [Formik](https://formik.org/) or [React Hook Form](https://react-hook-form.com/) (both works with Zod)
-- [ ] Icons: [Lucide](https://lucide.dev/) and / or [react-icons](https://react-icons.github.io/react-icons/)
-- [ ] Animations: [Framer Motion](https://www.framer.com/motion/) and / or [react-spring](https://www.react-spring.dev/) and / or [react-animations](https://github.com/FormidableLabs/react-animations) and / or [GreenSock](https://greensock.com/)
+- [ ] Form handler: (Formik or React Hook Form - both works with Zod)
+  - [ ] [Formik](https://formik.org/)
+  - [ ] [React Hook Form](https://react-hook-form.com/)
+- [ ] Icons:
+  - [ ] [Lucide](https://lucide.dev/)
+  - [ ] [react-icons](https://react-icons.github.io/react-icons/)
+- [ ] Animations:
+  - [ ] [Framer Motion](https://www.framer.com/motion/)
+  - [ ] [react-spring](https://www.react-spring.dev/)
+  - [ ] [react-animations](https://github.com/FormidableLabs/react-animations)
+  - [ ] [GreenSock](https://greensock.com/)
 - [ ] _DreamUI (customly build UI library on top of shancn, with form handlers, snackbar, i18n/rtl, etc.)_
 
 ### ✅ Quality and CI/CD
@@ -70,16 +81,25 @@ _plus more:_
 
 ### 🔍 Tesing
 
-- [ ] Unit / Integration testing: [Jest](https://jestjs.io/)
-- [ ] UI testing: [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) & [React Native Testing Library](https://testing-library.com/docs/react-native-testing-library/intro)
-- [ ] e2e testing: [Cypress](https://www.cypress.io/)
+- [ ] Unit / Integration testing: (choose one)
+  - [ ] [Jest](https://jestjs.io/)
+  - [ ] [Vitest](https://vitest.dev/) (Jest-compatible alternative)
+        [Migrate Jest to Vitest](https://dev.to/mbarzeev/from-jest-to-vitest-migration-and-benchmark-23pl)
+- [ ] UI testing:
+  - [ ] Web: [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+  - [ ] Mobile: [React Native Testing Library](https://testing-library.com/docs/react-native-testing-library/intro)
+- [ ] e2e testing: (choose one) [Cypress vs Playwright comparison](https://www.browserstack.com/guide/playwright-vs-cypress)
+  - [ ] [Cypress](https://www.cypress.io/)
+  - [ ] [Playwright](https://playwright.dev/)
 - [ ] API testing: [Postman](https://www.postman.com/)
 
 ### 📚 Documentation
 
 - [ ] UI documentation: [Storybook](https://storybook.js.org/)
 - [ ] API documentation: [Swagger](https://swagger.io/) & [Postman](https://www.postman.com/)
-- [ ] Other markdown docs: [Docusaurus](https://docusaurus.io/) or [Nextra](https://nextra.site/)
+- [ ] Other markdown docs: (choose one)
+  - [ ] [Docusaurus](https://docusaurus.io/)
+  - [ ] [Nextra](https://nextra.site/)
 
 ### 💭 Backend / Cloud
 
