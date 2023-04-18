@@ -6,4 +6,4 @@ const nextConfig = {
   typescript: { ignoreBuildErrors: !!process.env.CI },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
