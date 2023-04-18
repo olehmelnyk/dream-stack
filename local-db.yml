@@ -1,0 +1,43 @@
+# just a regular docker-compose.yml file
+version: "3.9"
+services:
+  pg-nextjs:
+    image: postgres:latest
+    container_name: pg-nextjs
+    hostname: pg-nextjs
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: nextjs
+      PGDATA: /var/lib/postgresql/data/nextjs
+    volumes:
+      - ./volumes/postgres-data:/var/lib/postgresql/data
+    networks:
+      - acme
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    depends_on:
+      - pg-nextjs
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - ./volumes/pgadmin-data:/var/lib/pgadmin
+    networks:
+      - acme
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  pgadmin-data:
+
+networks:
+  acme:
+    driver: bridge
