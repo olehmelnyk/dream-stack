@@ -25,6 +25,7 @@ This is an opinionated and extended t3-turbo stack, which includes:
 - [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
   - [x] [tailwind-merge](https://www.npmjs.com/package/tailwind-merge)
   - [x] [clsx](https://www.npmjs.com/package/clsx)
+  - [x] [class-variance-authority](https://cva.style/docs)
 - [x] Param validation: [Zod](https://zod.dev/)
 - [x] ORM for SQL and NoSQL: [Prisma](https://www.prisma.io/)
 - [x] Monorepo: [Turborepo](https://turbo.build/repo)
@@ -37,6 +38,7 @@ _plus more:_
 - [ ] [Figma](https://www.figma.com/) + [Zeplin](https://zeplin.io/)
 - [ ] [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [ ] [Storybook](https://storybook.js.org/)
+  - [x] Basic setup for Sotrybook/NextJS components
 - [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
 - [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
 - [ ] Form handler: [Formik](https://formik.org/) or [React Hook Form](https://react-hook-form.com/) (both works with Zod)

@@ -1,0 +1,19 @@
+{
+  "name": "@acme/nextui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "next": "^13.3.0"
+  },
+  "devDependencies": {
+    "@storybook/nextjs": "^7.0.5"
+  }
+}

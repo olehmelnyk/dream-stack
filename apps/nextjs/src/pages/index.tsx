@@ -11,7 +11,7 @@ const PostCard: React.FC<{
 }> = ({ post, onPostDelete }) => {
   return (
     <div className="flex flex-row rounded-lg bg-white/10 p-4 transition-all hover:scale-[101%]">
-      <div className="flex-grow">
+      <div className="grow">
         <h2 className="text-2xl font-bold text-pink-400">{post.title}</h2>
         <p className="mt-2 text-sm">{post.content}</p>
       </div>
