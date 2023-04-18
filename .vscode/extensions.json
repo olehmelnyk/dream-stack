@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
     "prisma.prisma",
-    "sonarsource.sonarlint-vscode"
+    "sonarsource.sonarlint-vscode",
+    "yoavbls.pretty-ts-errors"
   ]
 }
