@@ -7,13 +7,5 @@
     }
   },
   "exclude": [],
-  "include": [
-    "next-env.d.ts",
-    "**/**.stories.ts",
-    "**/**.stories.tsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.cjs",
-    "**/*.mjs"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"]
 }
