@@ -20,8 +20,8 @@ This is an opinionated and extended t3-turbo stack, which includes:
 - [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
   - [ ] Global state management:
-  - [ ] [Zustand](https://zustand-demo.pmnd.rs/) (as replacement for Redux)
-  - [ ] [Jotai](https://jotai.org/) (as replacement for ContextAPI, insipred by [Recoil](https://recoiljs.org/))
+    - [ ] [Zustand](https://zustand-demo.pmnd.rs/) (as replacement for Redux)
+    - [ ] [Jotai](https://jotai.org/) (as replacement for ContextAPI, insipred by [Recoil](https://recoiljs.org/))
 - [x] JavaScript superset with strong typying: [TypeScript](https://www.typescriptlang.org/)
   - [x] Fix some TS issues: [ts-reset](https://github.com/total-typescript/ts-reset)
 - [x] CSS library: [TailwindCSS](https://tailwindcss.com/) with [NativeWind](https://www.nativewind.dev/) for React Native
@@ -42,13 +42,13 @@ _plus more:_
 - [ ] [Storybook](https://storybook.js.org/)
   - [x] Basic setup for Sotrybook/NextJS components
   - [ ] Free Storybook deployments with CI/CD, feedbacs and more: [Chromatic](https://www.chromatic.com/)
-- [ ] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
+- [x] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
 - [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
 - [ ] Form handler: (Formik or React Hook Form - both works with Zod)
   - [ ] [Formik](https://formik.org/)
   - [ ] [React Hook Form](https://react-hook-form.com/)
 - [ ] Icons:
-  - [ ] [Lucide](https://lucide.dev/)
+  - [x] [Lucide](https://lucide.dev/)
   - [ ] [react-icons](https://react-icons.github.io/react-icons/)
 - [ ] Animations:
   - [ ] [Framer Motion](https://www.framer.com/motion/)
