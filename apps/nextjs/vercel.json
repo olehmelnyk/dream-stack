@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm turbo build --filter=nextjs",
-  "installCommand": "pnpm --filter=!expo --filter=!nest install --store=node_modules/.pnpm-store",
+  "installCommand": "pnpm install --filter=\\!expo --store=node_modules/.pnpm-store",
   "cleanUrls": true,
   "framework": "nextjs"
 }
