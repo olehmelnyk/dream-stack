@@ -15,12 +15,10 @@
     "@acme/db": "*",
     "@trpc/client": "^10.20.0",
     "@trpc/server": "^10.20.0",
-    "superjson": "1.9.1",
+    "superjson": "1.12.2",
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@acme/eslint-config": "*",
-    "eslint": "^8.38.0",
-    "typescript": "^5.0.4"
+    "@acme/eslint-config": "*"
   }
 }
