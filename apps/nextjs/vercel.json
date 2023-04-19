@@ -3,5 +3,5 @@
   "installCommand": "pnpm --filter=!expo --filter=!nest install --store=node_modules/.pnpm-store",
   "cleanUrls": true,
   "framework": "nextjs",
-  "ignoreCommand": "pnpx turbo-ignore nextjs"
+  "ignoreCommand": "pnpx turbo-ignore"
 }
