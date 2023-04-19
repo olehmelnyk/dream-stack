@@ -65,12 +65,15 @@ _plus more:_
 - [x] Code formatter: [Prettier](https://prettier.io/)
 - [x] Code linting: [ESLint](https://eslint.org/)
   - [x] [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
-- [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
-- [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
+- [ ] Sonar
+  - [x] Code linting: [SonarLint](https://www.sonarsource.com/products/sonarlint/) (added as recommended VSCode extension)
+  - [ ] Static code analysis: [SonarQube](https://www.sonarsource.com/products/sonarqube/)
 - [x] Git Commit messages: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) & [lintcommit](https://commitlint.js.org/)
 - [x] Git Branch Name Convesions: [validate-branch-name](https://github.com/JsonMa/validate-branch-name#readme)
-- [ ] Code monitoring, logging and alerting: [Sentry](https://sentry.io/welcome/)
-- [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
+- [ ] Code monitoring, logging and alerting:
+  - [ ] [Sentry](https://sentry.io/welcome/)
+  - [ ] [Checkly](https://www.checklyhq.com/) (e2e, monitoring & alerting, uses Playwright for e2e)
+  - [ ] System metrics, monitoring and alerting [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/)
 - [ ] Vulnerabilities checks
   - [ ] [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
   - [ ] [Snyk](https://snyk.io/)
@@ -130,3 +133,13 @@ _plus more:_
 # Useful resources:
 
 - [NPM Trends](https://npmtrends.com/) can be used if you need to complare multiple npm packages to pick from
+
+# Tool preferences
+
+- [npm](https://www.npmjs.com/) > [yarn](https://yarnpkg.com/) > ✅ [pnpm](https://pnpm.io/)
+- [webpack](https://webpack.js.org/) > [vite](https://vitejs.dev/) > ✅ [turbopack](https://turbo.build/pack)
+- [lerna](https://lerna.js.org/) > [nx](https://nx.dev/) > ✅ [turborepo](https://turbo.build/repo)
+- [jest](https://jestjs.io/) > ✅ [vitest](https://vitest.dev/)
+- [selenium](https://www.selenium.dev/) > [cypress](https://www.cypress.io/) > ✅ [playwright](https://playwright.dev/)
+- [nvm](https://github.com/nvm-sh/nvm) > ✅ [volta](https://volta.sh/)
+- [create-react-app](https://www.npmjs.com/package/create-react-app) > [create-next-app](https://www.npmjs.com/package/create-next-app) > [create-t3-app](https://github.com/t3-oss/create-t3-app) > [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo) > ✅ [dreamstack](https://github.com/olehmelnyk/dream-stack)
