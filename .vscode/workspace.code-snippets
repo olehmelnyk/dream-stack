@@ -1,4 +1,33 @@
 {
+  "NextJS component": {
+    "prefix": ["nextc"],
+    "body": [
+      "export interface ${1:$TM_FILENAME_BASE}Props {}\n",
+      "export const ${1:$TM_FILENAME_BASE} = ({}: ${1:$TM_FILENAME_BASE}Props) => { return () }\n",
+      "export default ${1:$TM_FILENAME_BASE};\n"
+    ],
+    "description": "NextJS TS functional component with props interface",
+    "scope": "typescriptreact"
+  },
+  "NextJS component story": {
+    "prefix": ["nexts"],
+    "body": [
+      "import type { Meta, StoryObj } from \"@storybook/react\";\n",
+      "import { ${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}} } from \"./${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}}\";\n",
+      "// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction",
+      "const meta: Meta<typeof ${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}}> = {",
+      "  title: \"ACME/${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}}\",",
+      "  component: ${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}},",
+      "  tags: [\"autodocs\"],",
+      "};\n",
+      "export default meta;",
+      "type Story = StoryObj<typeof ${1:${TM_FILENAME_BASE/(.*?)\\..*/$1/}}>;\n",
+      "// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args",
+      "export const Default: Story = { args: {} };"
+    ],
+    "description": "NextJS component story",
+    "scope": "typescriptreact"
+  },
   "React TS Functional Component": {
     "prefix": ["rfc"],
     "body": [
