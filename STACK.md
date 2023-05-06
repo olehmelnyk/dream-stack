@@ -16,6 +16,7 @@ This is an opinionated and extended t3-turbo stack, which includes:
     - [ ] JWT
     - [ ] 2fa (with Google Athenticator Codes)
     - [ ] Roles + RBAC (Role Based Access Control)
+      - [ ] [NextShield](https://imjulianeral.github.io/next-shield/)
     - [ ] [Using Postmark with NextAuth.js](https://shadcn.com/next-auth-postmark)
 - [x] Mobile: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 - [x] API Query / cache / state managment: [tRPC](https://trpc.io/) with [React Query](https://tanstack.com/query/v3/)
@@ -43,7 +44,9 @@ _plus more:_
   - [x] Basic setup for Sotrybook/NextJS components
   - [ ] Free Storybook deployments with CI/CD, feedbacs and more: [Chromatic](https://www.chromatic.com/)
 - [x] [shadcn/ui](https://ui.shadcn.com/) ([RadixUI](https://www.radix-ui.com/) + [TailwindCSS](https://tailwindcss.com/) + [tailwind-merge](https://github.com/dcastil/tailwind-merge) + [Class Variance Authority](https://github.com/joe-bell/cva) + [clsx](https://github.com/lukeed/clsx))
-- [ ] Snackbar / notifications: [React Hot Toast](https://react-hot-toast.com/)
+- [ ] Snackbar / notifications (choose one):
+  - [ ] [React Hot Toast](https://react-hot-toast.com/)
+  - [ ] [React Toastify](https://www.npmjs.com/package/react-toastify)
 - [ ] Form handler: (Formik or React Hook Form - both works with Zod)
   - [ ] [Formik](https://formik.org/)
   - [ ] [React Hook Form](https://react-hook-form.com/)
@@ -102,13 +105,14 @@ _plus more:_
 - [ ] API documentation: [Swagger](https://swagger.io/) & [Postman](https://www.postman.com/)
 - [ ] Other markdown docs: (choose one)
   - [ ] [Docusaurus](https://docusaurus.io/)
-  - [ ] [Nextra](https://nextra.site/)
+  - [ ] [Nextra](https://nextra.site/) (preffered)
 
 ### 💭 Backend / Cloud
 
 - [ ] Microservices
   - [ ] [NestJS](https://nestjs.com/)
   - [ ] Deno?
+  - [ ] Bun?
   - [ ] Python?
   - [ ] Go?
   - [ ] Rust?
@@ -118,7 +122,16 @@ _plus more:_
     - [ ] [Rate limiting](https://upstash.com/blog/upstash-ratelimit)
     - [ ] [Feature flags](https://docs.upstash.com/redis/sdks/edge-flags/overview)
   - [ ] [Kafka](https://docs.upstash.com/kafka)
-- [ ] File upload: [S3](https://aws.amazon.com/s3/?nc1=h_ls)
+- [ ] File upload:
+  - [ ] [S3](https://aws.amazon.com/s3/?nc1=h_ls)
+  - [ ] [MinIO](https://min.io/) (self-hosted S3-compatible object storage)
+  - [ ] [Cloudflare R2](https://www.cloudflare.com/products/r2/) (S3-compatible object storage)
+  - [ ] [UploadThing](https://uploadthing.com/) ([S3 alternative from t3-stack creator](https://www.youtube.com/watch?v=mxT3j-5s1Zc))
+  - [ ] [Vercel Storage](https://vercel.com/docs/storage)
+    - [ ] [Vercel KV](https://vercel.com/docs/storage#:~:text=your%20frontend%20framework.-,Vercel%20KV,-%3A%20Durable%20Redis) [based on Upstash Redis](https://docs.upstash.com/redis)
+    - [ ] [Vercel Postgres](https://vercel.com/docs/storage#:~:text=%3A%20Durable%20Redis-,Vercel%20Postgres,-%3A%20Serverless%20SQL) [based on Neon](https://neon.tech/)
+    - [ ] [Vercel Blob](https://vercel.com/docs/storage#:~:text=%3A%20Serverless%20SQL-,Vercel%20Blob,-%3A%20Large%20file%20storage) [based on Cloudflare R2](https://www.cloudflare.com/products/r2/)
+    - [ ] [Vercel Edge Config](https://vercel.com/docs/storage#:~:text=Large%20file%20storage-,Vercel%20Edge%20Config,-%3A%20Global%2C%20low%2Dlatency)
 - [ ] Send emails
   - [ ] [Postmark](https://postmarkapp.com/)
   - [ ] [Nodemailer](https://nodemailer.com/about/)
@@ -128,6 +141,9 @@ _plus more:_
 ### 🛠️ Other
 
 - [ ] i18n / rtl support
+  - [ ] [i18next](https://www.i18next.com/)
+    - [ ] [next-i18next](https://next.i18next.com/)
+    - [ ] [Locize](https://locize.com/)
 - [ ] [Row Level Security](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
 
 # Useful resources:
