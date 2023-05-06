@@ -1,1 +1,1 @@
-export * from "./src/stories/Button";
+export * from "./src/stories/Example/Button";
