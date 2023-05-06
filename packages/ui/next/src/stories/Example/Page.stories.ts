@@ -4,7 +4,7 @@ import { userEvent, within } from "@storybook/testing-library";
 import { Page } from "./Page";
 
 const meta: Meta<typeof Page> = {
-  title: "Example/Page",
+  title: "Page",
   component: Page,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
