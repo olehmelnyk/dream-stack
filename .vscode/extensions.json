@@ -3,8 +3,9 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "prisma.prisma",
     "sonarsource.sonarlint-vscode",
-    "yoavbls.pretty-ts-errors"
+    "yoavbls.pretty-ts-errors",
+    "Prisma.prisma",
+    "expo.vscode-expo-tools"
   ]
 }
