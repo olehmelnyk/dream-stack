@@ -1,8 +1,8 @@
-import { FlashList } from "@shopify/flash-list";
-import { Stack, useRouter } from "expo-router";
 import React from "react";
 import { Button, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Stack, useRouter } from "expo-router";
+import { FlashList } from "@shopify/flash-list";
 
 import { api, type RouterOutputs } from "~/utils/api";
 
@@ -14,7 +14,7 @@ function PostCard(props: {
 
   return (
     <View className="flex flex-row rounded-lg bg-white/10 p-4">
-      <View className="flex-grow">
+      <View className="grow">
         <TouchableOpacity onPress={() => router.push(`/post/${props.post.id}`)}>
           <Text className="text-xl font-semibold text-pink-400">
             {props.post.title}

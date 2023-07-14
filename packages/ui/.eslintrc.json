@@ -1,3 +1,7 @@
 {
-  "extends": ["@acme/eslint-config", "plugin:storybook/recommended"]
+  "extends": ["@acme/eslint-config", "plugin:storybook/recommended"],
+  "rules": {
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off"
+  }
 }

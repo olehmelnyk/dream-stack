@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import { signIn, signOut } from "next-auth/react";
-import Head from "next/head";
 import { useState } from "react";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { signIn, signOut } from "next-auth/react";
 
 import { api, type RouterOutputs } from "~/utils/api";
 
@@ -11,7 +11,7 @@ function PostCard(props: {
 }) {
   return (
     <div className="flex flex-row rounded-lg bg-white/10 p-4 transition-all hover:scale-[101%]">
-      <div className="flex-grow">
+      <div className="grow">
         <h2 className="text-2xl font-bold text-pink-400">{props.post.title}</h2>
         <p className="mt-2 text-sm">{props.post.content}</p>
       </div>
