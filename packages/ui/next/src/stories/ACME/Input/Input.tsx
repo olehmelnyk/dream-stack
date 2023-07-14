@@ -22,7 +22,7 @@ export const Input = ({ label, helperText, id, ...inputProps }: InputProps) => {
       <Label htmlFor={id}>{label}</Label>
       <ShadcnInput id={id} {...inputProps} />
       {helperText && (
-        <p className="text-muted-foreground text-sm">{helperText}</p>
+        <p className="text-sm text-muted-foreground">{helperText}</p>
       )}
     </div>
   );
