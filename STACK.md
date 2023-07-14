@@ -97,6 +97,7 @@ _plus more:_
 - [ ] e2e testing: (choose one) [Cypress vs Playwright comparison](https://www.browserstack.com/guide/playwright-vs-cypress)
   - [ ] [Cypress](https://www.cypress.io/)
   - [ ] [Playwright](https://playwright.dev/)
+  - [ ] [Testim.io](https://www.testim.io/)
 - [ ] API testing: [Postman](https://www.postman.com/)
 
 ### 📚 Documentation
